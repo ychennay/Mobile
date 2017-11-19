@@ -22,8 +22,8 @@
                                 <rect key="frame" x="54" y="188" width="267" height="234"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krW-pn-mbL">
-                                <rect key="frame" x="171" y="465" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
+                                <rect key="frame" x="106" y="457" width="139" height="30"/>
+                                <state key="normal" title="Start Animation"/>
                                 <connections>
                                     <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPo-OS-IBn"/>
                                 </connections>
@@ -34,14 +34,18 @@
                             <constraint firstItem="g6c-yX-akd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="168" id="4Ph-Hk-DW7"/>
                             <constraint firstItem="krW-pn-mbL" firstAttribute="top" secondItem="g6c-yX-akd" secondAttribute="bottom" constant="43" id="E9o-Gb-vIz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="krW-pn-mbL" secondAttribute="trailing" constant="172" id="Fan-26-65I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="krW-pn-mbL" secondAttribute="trailing" constant="130" id="PaH-rI-3Df"/>
                             <constraint firstItem="krW-pn-mbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="171" id="WEi-Qq-wbi"/>
+                            <constraint firstItem="krW-pn-mbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="Y93-bF-Iax"/>
                             <constraint firstItem="g6c-yX-akd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="aZP-8L-dn0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g6c-yX-akd" secondAttribute="trailing" constant="54" id="sgY-60-mek"/>
+                            <constraint firstItem="krW-pn-mbL" firstAttribute="top" secondItem="g6c-yX-akd" secondAttribute="bottom" constant="35" id="tZz-3t-JiE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g6c-yX-akd" secondAttribute="bottom" constant="245" id="vXi-gd-Xf4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="krW-pn-mbL" id="kJG-wG-spK"/>
                         <outlet property="image" destination="g6c-yX-akd" id="ccT-94-y4q"/>
                     </connections>
                 </viewController>

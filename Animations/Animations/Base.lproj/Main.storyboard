@@ -28,19 +28,49 @@
                                     <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPo-OS-IBn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U97-cO-1mN">
+                                <rect key="frame" x="150" y="495" width="50" height="30"/>
+                                <state key="normal" title="Fade In"/>
+                                <connections>
+                                    <action selector="fadeIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lLc-B3-nAQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkP-5d-meK">
+                                <rect key="frame" x="150" y="533" width="50" height="30"/>
+                                <state key="normal" title="Slide In"/>
+                                <connections>
+                                    <action selector="slideIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G5a-6F-1no"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNr-0H-jUP">
+                                <rect key="frame" x="157" y="571" width="36" height="30"/>
+                                <state key="normal" title="Grow"/>
+                                <connections>
+                                    <action selector="grow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dey-Qc-oDA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="g6c-yX-akd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="168" id="4Ph-Hk-DW7"/>
+                            <constraint firstItem="U97-cO-1mN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="5Yy-ch-bfg"/>
                             <constraint firstItem="krW-pn-mbL" firstAttribute="top" secondItem="g6c-yX-akd" secondAttribute="bottom" constant="43" id="E9o-Gb-vIz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="krW-pn-mbL" secondAttribute="trailing" constant="172" id="Fan-26-65I"/>
+                            <constraint firstItem="HkP-5d-meK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="GmQ-dy-3Q1"/>
+                            <constraint firstItem="U97-cO-1mN" firstAttribute="top" secondItem="krW-pn-mbL" secondAttribute="bottom" constant="8" id="GsY-Nc-bHo"/>
+                            <constraint firstItem="HkP-5d-meK" firstAttribute="top" secondItem="U97-cO-1mN" secondAttribute="bottom" constant="8" id="JCA-Wm-uXA"/>
+                            <constraint firstItem="XNr-0H-jUP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="KwL-xL-FeZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="krW-pn-mbL" secondAttribute="trailing" constant="130" id="PaH-rI-3Df"/>
                             <constraint firstItem="krW-pn-mbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="171" id="WEi-Qq-wbi"/>
                             <constraint firstItem="krW-pn-mbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="Y93-bF-Iax"/>
                             <constraint firstItem="g6c-yX-akd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="aZP-8L-dn0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HkP-5d-meK" secondAttribute="trailing" constant="175" id="eDp-EC-IH7"/>
+                            <constraint firstItem="XNr-0H-jUP" firstAttribute="top" secondItem="HkP-5d-meK" secondAttribute="bottom" constant="8" id="fkJ-IN-rLV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XNr-0H-jUP" secondAttribute="trailing" constant="182" id="gqj-pI-Pyd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g6c-yX-akd" secondAttribute="trailing" constant="54" id="sgY-60-mek"/>
                             <constraint firstItem="krW-pn-mbL" firstAttribute="top" secondItem="g6c-yX-akd" secondAttribute="bottom" constant="35" id="tZz-3t-JiE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g6c-yX-akd" secondAttribute="bottom" constant="245" id="vXi-gd-Xf4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U97-cO-1mN" secondAttribute="trailing" constant="175" id="yD7-5l-9ep"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

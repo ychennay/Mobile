@@ -124,21 +124,38 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXf-SK-6Fm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aB3-TJ-f5E">
+                                <rect key="frame" x="130" y="556" width="115" height="30"/>
+                                <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="restartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ScY-P0-l6P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5Y-Sz-ijG">
+                                <rect key="frame" x="130" y="92" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ape-hg-6FW" firstAttribute="leading" secondItem="fi1-fM-f9z" secondAttribute="trailing" constant="30" id="5PN-2x-abc"/>
+                            <constraint firstItem="aB3-TJ-f5E" firstAttribute="top" secondItem="htD-pG-9t1" secondAttribute="bottom" constant="33" id="5Ut-tg-Z9P"/>
                             <constraint firstItem="fi1-fM-f9z" firstAttribute="top" secondItem="FRD-Zi-sxH" secondAttribute="bottom" constant="40" id="Cwy-ve-z2S"/>
                             <constraint firstItem="6Mz-Ni-RcP" firstAttribute="leading" secondItem="FRD-Zi-sxH" secondAttribute="trailing" constant="32" id="EUc-Lt-oqX"/>
                             <constraint firstItem="rbj-3n-KV5" firstAttribute="top" secondItem="ape-hg-6FW" secondAttribute="bottom" constant="48.5" id="Ffh-D6-XQF"/>
                             <constraint firstItem="htD-pG-9t1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kd7-qE-d72"/>
                             <constraint firstItem="rbj-3n-KV5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PtU-s9-el7"/>
                             <constraint firstItem="Taf-2D-Qbl" firstAttribute="top" secondItem="yeL-hI-Z0d" secondAttribute="bottom" constant="42" id="Rt8-7D-wEg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aB3-TJ-f5E" secondAttribute="trailing" constant="130" id="WgV-eE-slr"/>
                             <constraint firstItem="rbj-3n-KV5" firstAttribute="leading" secondItem="NyI-1d-pHw" secondAttribute="trailing" constant="32" id="ZZh-ie-Cud"/>
                             <constraint firstItem="6Mz-Ni-RcP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jLo-o7-aNY"/>
                             <constraint firstItem="htD-pG-9t1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nUK-bk-Ma4"/>
                             <constraint firstItem="ape-hg-6FW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o0S-Jr-J82"/>
                             <constraint firstItem="yeL-hI-Z0d" firstAttribute="top" secondItem="yWS-K2-Rn7" secondAttribute="bottom" constant="40" id="pvh-sK-B0z"/>
+                            <constraint firstItem="aB3-TJ-f5E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="sBv-Gl-CE3"/>
                             <constraint firstItem="fi1-fM-f9z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t8j-Vi-S0n"/>
                             <constraint firstItem="ape-hg-6FW" firstAttribute="top" secondItem="6Mz-Ni-RcP" secondAttribute="bottom" constant="46.5" id="tOV-Ng-Po2"/>
                             <constraint firstItem="yWS-K2-Rn7" firstAttribute="leading" secondItem="6Mz-Ni-RcP" secondAttribute="trailing" constant="32" id="utu-fl-WoQ"/>
@@ -150,6 +167,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="outcomeLabel" destination="O5Y-Sz-ijG" id="Dkq-Zq-w6C"/>
+                        <outlet property="startOverButton" destination="aB3-TJ-f5E" id="bg1-5e-NrV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,10 +13,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let cellContent = ["Yu", "Ali", "Wali", "Cali"]
     
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("called")
         return cellContent.count
     }
     
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+           print("called !")
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
         
         cell.textLabel?.text = cellContent[indexPath.row]

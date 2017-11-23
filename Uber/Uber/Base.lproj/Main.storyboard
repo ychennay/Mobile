@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Uber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="your@email.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="USh-V8-tQJ">
+                                <rect key="frame" x="83" y="174" width="208" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nox-4l-IAb">
+                                <rect key="frame" x="83" y="225" width="208" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jTN-ft-GNm">
+                                <rect key="frame" x="164" y="273" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egW-Ug-Ocd">
+                                <rect key="frame" x="83" y="278" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp8-Sf-4an">
+                                <rect key="frame" x="167" y="59" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikq-W1-jUM">
+                                <rect key="frame" x="249" y="278" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juV-QN-RXe">
+                                <rect key="frame" x="162" y="339" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="topPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Mv-2h-5fD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1X-F7-aOc">
+                                <rect key="frame" x="132" y="422" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Switch to Log In"/>
+                                <connections>
+                                    <action selector="bottomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2Z-CW-HN2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jTN-ft-GNm" secondAttribute="trailing" constant="162" id="6Hc-kI-qnG"/>
+                            <constraint firstItem="nox-4l-IAb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="6lF-H9-ywM"/>
+                            <constraint firstItem="egW-Ug-Ocd" firstAttribute="centerY" secondItem="jTN-ft-GNm" secondAttribute="centerY" id="B5y-N8-QP3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nox-4l-IAb" secondAttribute="trailing" constant="84" id="Bec-g6-PBh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ikq-W1-jUM" secondAttribute="trailing" constant="80" id="FOc-CR-iWz"/>
+                            <constraint firstItem="egW-Ug-Ocd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="LFI-er-M3I"/>
+                            <constraint firstItem="USh-V8-tQJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="Oaa-n1-JGQ"/>
+                            <constraint firstItem="USh-V8-tQJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="RSo-te-dow"/>
+                            <constraint firstItem="nox-4l-IAb" firstAttribute="top" secondItem="USh-V8-tQJ" secondAttribute="bottom" constant="29" id="UKU-t0-UWw"/>
+                            <constraint firstItem="jTN-ft-GNm" firstAttribute="top" secondItem="nox-4l-IAb" secondAttribute="bottom" constant="26" id="Ugr-G7-X14"/>
+                            <constraint firstItem="ikq-W1-jUM" firstAttribute="leading" secondItem="jTN-ft-GNm" secondAttribute="trailing" constant="38" id="Uvz-Ao-VFu"/>
+                            <constraint firstItem="ikq-W1-jUM" firstAttribute="leading" secondItem="jTN-ft-GNm" secondAttribute="trailing" constant="36" id="p8F-eO-Z7A"/>
+                            <constraint firstItem="ikq-W1-jUM" firstAttribute="centerY" secondItem="jTN-ft-GNm" secondAttribute="centerY" id="suA-zH-syx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="USh-V8-tQJ" secondAttribute="trailing" constant="84" id="xA4-Fs-n23"/>
+                            <constraint firstItem="jTN-ft-GNm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="xWD-Ag-OXK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="k1X-F7-aOc" id="Cil-Ix-2Nn"/>
+                        <outlet property="driverLabel" destination="ikq-W1-jUM" id="q2W-QB-PTe"/>
+                        <outlet property="emailField" destination="USh-V8-tQJ" id="REr-Ar-TNh"/>
+                        <outlet property="passwordField" destination="nox-4l-IAb" id="vd5-S4-U6j"/>
+                        <outlet property="riderLabel" destination="egW-Ug-Ocd" id="ATe-Qe-zZF"/>
+                        <outlet property="topButton" destination="juV-QN-RXe" id="Rdz-sW-lwA"/>
+                        <outlet property="userTypeSwitch" destination="jTN-ft-GNm" id="lVh-kH-wfA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
